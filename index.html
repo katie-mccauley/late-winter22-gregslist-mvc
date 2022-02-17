@@ -34,7 +34,7 @@
         <div class="col-2 bg-secondary">
           <h4 class="selectable p-2" onclick="app.carsController.viewCars()">Cars</h4>
           <h4 class="selectable p-2" onclick="app.housesController.viewHouses()">Houses</h4>
-          <h4 class="selectable p-2">Jobs</h4>
+          <h4 class="selectable p-2" onclick="app.jobsController.viewJobs()">Jobs</h4>
         </div>
         <div class="col-10">
           <div class="row p-2" id="listings">
@@ -80,6 +80,49 @@
 
       <div class="row flex-grow-1" id="houses">
         <!-- NOTE This is the house form -->
+      </div>
+      <!-- <form class="row bg-white p-2" onsubmit="app.jobsController.createJob(event)">
+        <h3 class="col-12">GET JOB</h3>
+        <div class="mb-3 col-5">
+          <label for="" class="form-label">Position</label>
+          <input type="text" class="form-control" name="position" id="position" aria-describedby="helpId"
+            placeholder="">
+        </div>
+        <div class="mb-3 col-5">
+          <label for="" class="form-label">City</label>
+          <input type="text" class="form-control" name="city" id="city" aria-describedby="helpId" placeholder="">
+        </div>
+        <div class="mb-3 col-2">
+          <label for="" class="form-label">State</label>
+          <input type="text" class="form-control" name="state" id="state" aria-describedby="helpId" placeholder=""
+            value="2000" min="1990" max="3000">
+        </div>
+        <div class="mb-3 col-2">
+          <label for="" class="form-label">Salary</label>
+          <input type="number" class="form-control" name="salary" id="salary" aria-describedby="helpId" placeholder=""
+            value="2000" min="1990" max="3000">
+        </div>
+        <div class="mb-3 col-6">
+          <label for="" class="form-label">ImgUrl</label>
+          <input type="text" class="form-control" name="imgUrl" id="imgUrl" aria-describedby="helpId" placeholder="">
+        </div>
+        <button class="col-4 offset-8 btn btn-success"> Create</button>
+      </form> -->
+      <div class="row flex-grow-1" id="jobs">
+        <!-- NOTE This is the job form -->
+        <!-- <div class="col-md-4">
+          <div class="bg-white rounded shadow">
+            <img class="img-fluid rounded-top" src="https://thiscatdoesnotexist.com" alt="car image">
+            <div class="p-3">
+              <p>Salary</p>
+              <p>City</p>
+              <p>State</p>
+              <p>Position</p>
+              <button class="btn btn-danger">Delete</button>
+            </div>
+          </div>
+        </div> -->
+        <!-- the end of the template -->
       </div>
     </div>
     </div>

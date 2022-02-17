@@ -1,5 +1,7 @@
 import { Car } from "./Models/Car.js"
 import { House } from "./Models/House.js"
+import { Job } from "./Models/Job.js"
+
 import { EventEmitter } from "./Utils/EventEmitter.js"
 import { isValidProp } from "./Utils/isValidProp.js"
 
@@ -24,6 +26,16 @@ const buyHouse = new House(
     sqfoot: 700,
   })
 
+const getJob = new Job(
+  {
+    imgUrl: 'https://thiscatdoesnotexist.com',
+    salary: 1400000,
+    city: "Porty",
+    state: "OR-E-GONE",
+    position: "Manager",
+
+  })
+
 class AppState extends EventEmitter {
 
   // NOTE just adds intellisense to our cars array that lets our code know its an array of cars, not other things 
@@ -31,6 +43,8 @@ class AppState extends EventEmitter {
   cars = [testCar]
   /**@type {import('./Models/House').House[]} */
   houses = [buyHouse]
+  /**@type {import('./Models/Job').Job[]} */
+  jobs = [getJob]
 }
 
 
